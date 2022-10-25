@@ -3,3 +3,4 @@
 .DS_Store
 */target
 ui_demo/rsc
+cargo/library/target

@@ -1,0 +1,18 @@
+[package]
+name = "uuid-sample"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#uuid = "1.2.1"
+# git clone https://github.com/uuid-rs/uuid.git
+# compile from local
+uuid = {version = "0.8.2", path = "../uuid"}
+# mktemp does not use local carte. should use [patch] below
+mktemp = "0.4.0"
+
+[patch.crates-io]
+uuid = {git = "https://github.com/uuid-rs/uuid.git"}
+
